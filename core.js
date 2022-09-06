@@ -25,10 +25,14 @@ export function createStore(reducer) {
             roots.set(root,component);
             render()
         },
+        
        
         connect(selector = state => state) {
-            return component => (props, ...args) => 
-            component(Object.assign({}, props, selector(state),...args))
+            return (component => 
+            // props hold the whole fucking html after converting you nerdssssssssssssssssss
+            // read above
+            (props, ...args) => 
+            component(Object.assign({}, props, selector(state),...args)))
         },
         dispatch(action, ...args) {
             state = reducer(state,action,args);
