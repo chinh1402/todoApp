@@ -17,9 +17,6 @@ export function createStore(reducer) {
             root.innerHTML = output;
         }
     }
-
-    // example on script: 
-    // attach(() => '<h1>HELLO WORLD </h1>', document.getElementById('root'));
     return {
         attach(component, root) {
             roots.set(root,component);
@@ -29,8 +26,6 @@ export function createStore(reducer) {
        
         connect(selector = state => state) {
             return (component => 
-            // props hold the whole fucking html after converting you nerdssssssssssssssssss
-            // read above
             (props, ...args) => 
             component(Object.assign({}, props, selector(state),...args)))
         },
