@@ -17,9 +17,12 @@ export function createStore(reducer) {
             root.innerHTML = output;
         }
     }
+<<<<<<< HEAD
 
     // example on script: 
     // attach(() => '<h1>HELLO WORLD </h1>', document.getElementById('root'));
+=======
+>>>>>>> d2392a0 (commit on self)
     return {
         attach(component, root) {
             roots.set(root,component);
@@ -28,9 +31,13 @@ export function createStore(reducer) {
         
        
         connect(selector = state => state) {
+<<<<<<< HEAD
             return (component => 
             // props hold the whole fucking html after converting you nerdssssssssssssssssss
             // read above
+=======
+            return (component =>
+>>>>>>> d2392a0 (commit on self)
             (props, ...args) => 
             component(Object.assign({}, props, selector(state),...args)))
         },
