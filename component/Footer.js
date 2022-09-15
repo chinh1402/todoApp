@@ -1,6 +1,7 @@
 import html from '../core.js'
 import { connect } from '../store.js'
 
+<<<<<<< HEAD
 function Footer({todos, filter, filters}) {
     return html`
         <footer class="footer">
@@ -21,8 +22,30 @@ function Footer({todos, filter, filters}) {
             <button class="clear-completed"
             onclick = "dispatch('clear_completed')"
             >${todos.filter(filters.completed).length > 0 && "Clear completed"}</button>
+=======
+function Footer() {
+    return html`
+        <footer class="footer">
+            <span class="todo-count"><strong>0</strong> item left</span>
+            <ul class="filters">
+                <li>
+                    <a class="selected" href="#/">All</a>
+                </li>
+                <li>
+                    <a href="#/active">Active</a>
+                </li>
+                <li>
+                    <a href="#/completed">Completed</a>
+                </li>
+            </ul>
+            <button class="clear-completed">Clear completed</button>
+>>>>>>> 569f2b183acdbf23ff799a79bd91af8de0af4e8b
         </footer>
     `
 }
 
+<<<<<<< HEAD
 export default connect()(Footer)
+=======
+export default connect()(Footer)
+>>>>>>> 569f2b183acdbf23ff799a79bd91af8de0af4e8b
