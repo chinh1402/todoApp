@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import storage from "./util/storage.js";
 
 const init = {
@@ -64,17 +63,3 @@ export default function reducer(state = init, action, args) {
     actions[action] && actions[action](state, ...args);
     return state; 
 }
-=======
-const init = {
-
-}
-
-const actions = {
-
-}
-
-export default function reducer(state= init, action, args) {
-    actions[action] &&  actions[action](state,...args);
-    return state
-} 
->>>>>>> 569f2b183acdbf23ff799a79bd91af8de0af4e8b
