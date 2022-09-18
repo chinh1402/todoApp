@@ -41,6 +41,8 @@ const actions = {
         // todos = todos.filter(filters.active); doesnt work?, yes!
         storage.set(state.todos)
     },
+    // ý tưởng fix bug: bạn k thực hiện gán thẳng 1 object, bạn chỉ có thể gán con object
+    // it works!!!!
     startEdit(state, index) {
         state.editIndex = index
     },
