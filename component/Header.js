@@ -1,5 +1,4 @@
 import html from '../core.js'
-// import { connect } from '../store.js'
 
 function Header() {
     return html`

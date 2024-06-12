@@ -20,13 +20,11 @@ const actions = {
     },
     toggle({todos}, index){
         const todo = todos[index];
-        //since the item in arr are obj, so this return an addr
         todo.completed = !todo.completed;
         storage.set(todos)
     },
     toggleAll({todos}, completed) {
         todos.forEach(todo => todo.completed = completed);
-        // each item todo in this forEach is an obj, this also return addr :Đ
         storage.set(todos)
     },
     destroy({todos}, index) {
@@ -38,7 +36,6 @@ const actions = {
     },
     clear_completed(state) {
         state.todos = state.todos.filter(state.filters.active);
-        // todos = todos.filter(filters.active); doesnt work?, yes!
         storage.set(state.todos)
     },
     startEdit(state, index) {
