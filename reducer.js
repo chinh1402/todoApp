@@ -41,9 +41,6 @@ const actions = {
         // todos = todos.filter(filters.active); doesnt work?, yes!
         storage.set(state.todos)
     },
-    // ý tưởng fix bug: bạn k thực hiện gán thẳng 1 object, bạn chỉ có thể gán con object
-    // 13:30 bài primitive type và ref type
-    // it works!!!!
     startEdit(state, index) {
         state.editIndex = index
     },
@@ -62,8 +59,6 @@ const actions = {
     cancelEdit(state) {
         state.editIndex = null;
     }
-    
-
 }
 
 export default function reducer(state = init, action, args) {

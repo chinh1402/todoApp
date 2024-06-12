@@ -1,4 +1,3 @@
-
 export default function Logger(reducer) {
 
     return (prevstate, action, args) => {

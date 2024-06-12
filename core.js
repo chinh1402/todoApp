@@ -22,7 +22,6 @@ export function createStore(reducer) {
             roots.set(root,component);
             render()
         },
-        
        
         connect(selector = state => state) {
             return (component => 
