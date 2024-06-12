@@ -8,3 +8,5 @@ export default {
         localStorage.setItem(TODOS_STORAGE_KEY, JSON.stringify(todos));
     } 
 }
+
+// Using localstorage to save data onto users browsers
