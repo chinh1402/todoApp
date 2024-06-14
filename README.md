@@ -1,6 +1,10 @@
-Video guide: https://www.youtube.com/watch?v=UajBbcr8sfc
-This is a todo App using custom Redux library
-Main functionalities:
-- You can add, update, delete todo item to your own desire
-- You can filter the items using All, Active, Complete options. Clear Complete to clear all the completed todo item
-- All the todo items data are saved on the browser.
+## Todo App using Custom Redux Library
+
+**Main Functionalities:**
+
+- Add, update, delete todo items as needed.
+- Filter todo items by All, Active, or Completed options.
+- Clear completed todo items with the "Clear Complete" option.
+- Data for all todo items is saved locally in the browser.
+
+[Video Guide](https://www.youtube.com/watch?v=UajBbcr8sfc)
